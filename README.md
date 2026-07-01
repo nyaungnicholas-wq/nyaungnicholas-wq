@@ -8,7 +8,7 @@
 
 ### 🛠️ Things I've built
 
-- 🛰️ **Mission Control** — a local, real-time ops dashboard that monitors my whole fleet of projects: health probes (git / uptime / build / cron), live telemetry, and autonomous "hole-finder" agents that read-only-audit each repo for bugs and security issues. *Next.js · Node daemon · SQLite · SSE.*
+- 🛰️ **[Mission Control](https://github.com/nyaungnicholas-wq/mission-control)** — a local, real-time ops dashboard that monitors my whole fleet of projects: health probes (git / uptime / build / cron), live telemetry, and autonomous "hole-finder" agents that read-only-audit each repo for bugs and security issues. *Next.js · Node daemon · SQLite · SSE.*
 - 🏡 **[Shanty Real Estate](https://shanty-realestate.com)** — a live, in-production website I built for a working real-estate agent. Motion-heavy Next.js, deployed on Vercel.
 - 📈 **Systematic trading** — equities-rotation and futures strategies I designed, backtested across market regimes, and run in paper trading. *Python.*
 - 🤖 **AI agents & content systems** — a voice assistant with a self-correcting build loop, and an automated short-form video pipeline that scripts, renders, and posts.
