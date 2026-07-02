@@ -8,6 +8,7 @@
 
 ### 🛠️ Things I've built
 
+- 🎯 **[ScoutNet](https://github.com/nyaungnicholas-wq/scoutnet)** — an AI lead-gen agent for agencies & freelancers: it finds local businesses whose website/marketing is quietly costing them customers, scores each on transparent evidence, drafts an honest cold email, and sends it from your own domain (hybrid auto-send + review queue). Open source, zero-config local run, one-click Vercel deploy. *Next.js 16 · Drizzle · Postgres.*
 - 🛰️ **[Mission Control](https://github.com/nyaungnicholas-wq/mission-control)** — a local, real-time ops dashboard that monitors my whole fleet of projects: health probes (git / uptime / build / cron), live telemetry, and autonomous "hole-finder" agents that read-only-audit each repo for bugs and security issues. *Next.js · Node daemon · SQLite · SSE.*
 - 🏡 **[Shanty Real Estate](https://shanty-realestate.com)** — a live, in-production website I built for a working real-estate agent. Motion-heavy Next.js, deployed on Vercel.
 - 📈 **Systematic trading** — equities-rotation and futures strategies I designed, backtested across market regimes, and run in paper trading. *Python.*
