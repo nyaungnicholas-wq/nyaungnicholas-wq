@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="490" height="388" xmlns="http://www.w3.org/2000/svg">
+<svg width="490" height="426" xmlns="http://www.w3.org/2000/svg">
 <defs><style>@keyframes in {{ from {{ opacity:0; transform: translateX(-8px) }} to {{ opacity:1; transform:none }} }} .r {{ opacity:0; animation: in .32s ease-out forwards }}</style></defs>
 <rect width="100%" height="100%" fill="#0d1117" stroke="#21262d" rx="8" ry="8"/>
 <circle cx="20" cy="30" r="5" fill="#ff5f56" class="r" style="animation-delay:0.00s"/>
@@ -13,27 +13,29 @@
 <text x="60" y="139" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:0.49s">Focus </text>
 <text x="160" y="139" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.49s">0 -&gt; shipped, solo, end to end</text>
 <text x="60" y="158" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:0.56s">Stack </text>
-<text x="160" y="158" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.56s">TypeScript · Next.js · Node · Python</text>
+<text x="160" y="158" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.56s">TypeScript · Next.js · Go · Python · Node</text>
 <text x="60" y="177" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:0.63s">Infra </text>
 <text x="160" y="177" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.63s">Postgres · Drizzle · Vercel · SQLite</text>
 <text x="60" y="196" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:0.70s">Builds</text>
 <text x="160" y="196" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.70s">ScoutNet — AI lead-gen agent</text>
-<text x="160" y="215" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.77s">Mission Control — fleet ops dashboard</text>
-<text x="160" y="234" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.84s">Shanty Real Estate — live production site</text>
-<text x="160" y="253" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.91s">Systematic trading — equities + futures</text>
-<text x="160" y="272" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.98s">AI agents &amp; short-form video pipeline</text>
-<text x="60" y="291" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:1.05s">Site  </text>
-<text x="160" y="291" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.05s">nicholasnyaung.com</text>
-<text x="60" y="310" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:1.12s">Email </text>
-<text x="160" y="310" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.12s">nyaungnicholas@gmail.com</text>
-<text x="60" y="329" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:1.19s">Status</text>
-<text x="160" y="329" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.19s">open to opportunities</text>
-<rect x="60" y="358" width="11" height="11" fill="#161b22" class="r" style="animation-delay:1.33s"/>
-<rect x="73" y="358" width="11" height="11" fill="#0e4429" class="r" style="animation-delay:1.33s"/>
-<rect x="86" y="358" width="11" height="11" fill="#006d32" class="r" style="animation-delay:1.33s"/>
-<rect x="99" y="358" width="11" height="11" fill="#26a641" class="r" style="animation-delay:1.33s"/>
-<rect x="112" y="358" width="11" height="11" fill="#39d353" class="r" style="animation-delay:1.33s"/>
-<rect x="125" y="358" width="11" height="11" fill="#69f0ae" class="r" style="animation-delay:1.33s"/>
-<rect x="138" y="358" width="11" height="11" fill="#58a6ff" class="r" style="animation-delay:1.33s"/>
-<rect x="151" y="358" width="11" height="11" fill="#c9d1d9" class="r" style="animation-delay:1.33s"/>
+<text x="160" y="215" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.77s">GrowNet — inbound + outbound on one spine</text>
+<text x="160" y="234" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.84s">Throughline — multi-tenant work manager</text>
+<text x="160" y="253" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.91s">Mission Control — fleet ops command center</text>
+<text x="160" y="272" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:0.98s">TickStream — consolidated crypto book (Go)</text>
+<text x="160" y="291" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.05s">Futures Trader — backtested NQ research</text>
+<text x="160" y="310" fill="#8b949e" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.12s">Shanty Real Estate — live production site</text>
+<text x="60" y="329" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:1.19s">Site  </text>
+<text x="160" y="329" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.19s">nicholasnyaung.com</text>
+<text x="60" y="348" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:1.26s">Email </text>
+<text x="160" y="348" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.26s">nyaungnicholas@gmail.com</text>
+<text x="60" y="367" fill="#58a6ff" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="bold" class="r" style="animation-delay:1.33s">Status</text>
+<text x="160" y="367" fill="#c9d1d9" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" class="r" style="animation-delay:1.33s">open to opportunities</text>
+<rect x="60" y="396" width="11" height="11" fill="#161b22" class="r" style="animation-delay:1.47s"/>
+<rect x="73" y="396" width="11" height="11" fill="#0e4429" class="r" style="animation-delay:1.47s"/>
+<rect x="86" y="396" width="11" height="11" fill="#006d32" class="r" style="animation-delay:1.47s"/>
+<rect x="99" y="396" width="11" height="11" fill="#26a641" class="r" style="animation-delay:1.47s"/>
+<rect x="112" y="396" width="11" height="11" fill="#39d353" class="r" style="animation-delay:1.47s"/>
+<rect x="125" y="396" width="11" height="11" fill="#69f0ae" class="r" style="animation-delay:1.47s"/>
+<rect x="138" y="396" width="11" height="11" fill="#58a6ff" class="r" style="animation-delay:1.47s"/>
+<rect x="151" y="396" width="11" height="11" fill="#c9d1d9" class="r" style="animation-delay:1.47s"/>
 </svg>
