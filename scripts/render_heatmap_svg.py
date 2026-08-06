@@ -36,10 +36,10 @@ def main():
     
     svg_lines = []
     svg_lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{grid_width}" height="{total_height}" viewBox="0 0 {grid_width} {total_height}">')
-    # MEASURED on the live profile: GitHub renders README SVGs as fully static
-    # images — neither CSS @keyframes nor SMIL <animate> runs. Any reveal that
-    # starts at opacity:0 therefore renders a permanently blank box. So: no
-    # animation, and nothing is ever hidden. See check_heatmap.py.
+    # GitHub renders README SVGs as <img> and does NOT run CSS @keyframes there —
+    # a CSS-only reveal leaves everything stuck at opacity:0. SMIL it does play.
+    def reveal(delay):
+        return f'<animate attributeName="opacity" from="0" to="1" begin="{delay:.3f}s" dur="0.35s" fill="freeze"/>'
 
     svg_lines.append(f'<rect width="100%" height="100%" fill="#0d1117" rx="8"/>')
     
@@ -88,18 +88,20 @@ def main():
             
             x = left_gutter + week * pitch
             y = top_gutter + row * pitch
-            svg_lines.append(f'<rect x="{x}" y="{y}" width="{cell_size}" height="{cell_size}" rx="2" ry="2" fill="{color}"><title>{escape(title)}</title></rect>')
+            delay = (week + row) * 0.012
+            svg_lines.append(f'<rect x="{x}" y="{y}" width="{cell_size}" height="{cell_size}" rx="2" ry="2" fill="{color}" opacity="0"><title>{escape(title)}</title>{reveal(delay)}</rect>')
     
+    max_delay = (weeks + 6) * 0.012 + 0.35
     footer_y = grid_height + 20
-    svg_lines.append(f'<text x="10" y="{footer_y}" font-family="ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace" font-size="11" fill="#7d8590">{escape(f"{total:,} contributions in the last year   ·   {current_streak} day streak   ·   longest {longest_streak}")}</text>')
+    svg_lines.append(f'<text x="10" y="{footer_y}" font-family="ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace" font-size="11" fill="#7d8590" opacity="0">{escape(f"{total:,} contributions in the last year   ·   {current_streak} day streak   ·   longest {longest_streak}")}{reveal(max_delay + 0.1)}</text>')
     
     legend_x = grid_width - 150
     legend_y = footer_y + 30
-    svg_lines.append(f'<text x="{legend_x}" y="{legend_y}" font-family="ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace" font-size="10" fill="#7d8590">Less</text>')
+    svg_lines.append(f'<text x="{legend_x}" y="{legend_y}" font-family="ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace" font-size="10" fill="#7d8590" opacity="0">Less{reveal(max_delay + 0.1)}</text>')
     for i, color in enumerate(palette):
         x = legend_x + 30 + i * (cell_size + 3)
-        svg_lines.append(f'<rect x="{x}" y="{legend_y - 10}" width="{cell_size}" height="{cell_size}" rx="2" ry="2" fill="{color}"/>')
-    svg_lines.append(f'<text x="{legend_x + 30 + 6 * (cell_size + 3) + 3}" y="{legend_y}" font-family="ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace" font-size="10" fill="#7d8590">More</text>')
+        svg_lines.append(f'<rect x="{x}" y="{legend_y - 10}" width="{cell_size}" height="{cell_size}" rx="2" ry="2" fill="{color}" opacity="0">{reveal(max_delay + 0.1)}</rect>')
+    svg_lines.append(f'<text x="{legend_x + 30 + 6 * (cell_size + 3) + 3}" y="{legend_y}" font-family="ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace" font-size="10" fill="#7d8590" opacity="0">More{reveal(max_delay + 0.1)}</text>')
     
     svg_lines.append('</svg>')
     
