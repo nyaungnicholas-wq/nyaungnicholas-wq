@@ -19,15 +19,13 @@ assert tree.tag.endswith("svg"), "root element is not <svg>"
 days = json.loads((root / "data" / "contributions.json").read_text(encoding="utf-8"))["days"]
 rects = [e for e in tree.iter() if e.tag.endswith("rect")]
 assert len(rects) >= len(days), f"only {len(rects)} rects for {len(days)} days"
-# GitHub serves README SVGs as <img> and does not run CSS @keyframes there, so a
-# CSS-only reveal renders a blank box. Everything hidden must be revealed by SMIL.
-assert "@keyframes" not in text, "CSS keyframes do not run on GitHub — use SMIL <animate>"
-animates = [e for e in tree.iter() if e.tag.endswith("animate")]
-assert len(animates) >= len(days), f"only {len(animates)} <animate> for {len(days)} days"
-assert all(a.get("fill") == "freeze" for a in animates), "every <animate> needs fill=freeze so it holds"
-assert all(a.get("repeatCount") is None for a in animates), "animation must not loop"
-hidden = [e for e in tree.iter() if e.get("opacity") == "0"]
-for e in hidden:
-    assert any(c.tag.endswith("animate") for c in e), f"opacity=0 with no <animate> would stay invisible: {e.tag}"
+# MEASURED on the live profile: GitHub renders README SVGs as fully static images.
+# Neither CSS @keyframes nor SMIL <animate> runs, so anything that starts hidden
+# stays hidden forever — that is exactly how this shipped blank twice.
+assert "@keyframes" not in text, "CSS keyframes do not run on GitHub — nothing may depend on them"
+assert "<animate" not in text, "SMIL does not run on GitHub either — nothing may depend on it"
+for e in tree.iter():
+    assert e.get("opacity") != "0", f"{e.tag} starts invisible and nothing will ever reveal it"
+    assert "opacity:0" not in (e.get("style") or "").replace(" ", ""), f"{e.tag} hidden via style"
 assert "http" not in text.replace("http://www.w3.org", ""), "SVG must not reference external resources"
 print("check_heatmap OK", len(rects), "rects,", len(text), "bytes")
