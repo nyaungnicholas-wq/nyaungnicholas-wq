@@ -1,9 +1,9 @@
 {
   "username": "nyaungnicholas-wq",
-  "generated_at": "2026-10-24T11:07:12.319541+00:00",
-  "total": 1818,
-  "current_streak": 86,
-  "longest_streak": 86,
+  "generated_at": "2026-10-25T11:37:32.540758+00:00",
+  "total": 1821,
+  "current_streak": 87,
+  "longest_streak": 87,
   "best_day": {
     "date": "2026-10-02",
     "count": 134,
@@ -22,44 +22,9 @@
     "2026-07": 146,
     "2026-08": 649,
     "2026-09": 558,
-    "2026-10": 446
+    "2026-10": 449
   },
   "days": [
-    {
-      "date": "2025-10-19",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-20",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-21",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-22",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-23",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-24",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-25",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-10-26",
       "count": 0,
@@ -1877,6 +1842,11 @@
     },
     {
       "date": "2026-10-24",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-10-25",
       "count": 0,
       "level": 0
     }
